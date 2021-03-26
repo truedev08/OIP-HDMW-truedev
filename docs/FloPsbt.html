@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      FloPsbt - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  <link type="text/css" rel="stylesheet" href="styles/monokai-sublime.css">
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      OIP HDMW
+    </h3>
+
+    <h3>Classes</h3><ul><li id="Account-nav"><a href="Account.html">Account</a><ul class='methods'><li data-type="method" id="Account-discoverChain-nav"><a href="Account.html#discoverChain">discoverChain</a></li><li data-type="method" id="Account-discoverChains-nav"><a href="Account.html#discoverChains">discoverChains</a></li><li data-type="method" id="Account-getAddress-nav"><a href="Account.html#getAddress">getAddress</a></li><li data-type="method" id="Account-getAddresses-nav"><a href="Account.html#getAddresses">getAddresses</a></li><li data-type="method" id="Account-getBalance-nav"><a href="Account.html#getBalance">getBalance</a></li><li data-type="method" id="Account-getChain-nav"><a href="Account.html#getChain">getChain</a></li><li data-type="method" id="Account-getExtendedPrivateKey-nav"><a href="Account.html#getExtendedPrivateKey">getExtendedPrivateKey</a></li><li data-type="method" id="Account-getExtendedPublicKey-nav"><a href="Account.html#getExtendedPublicKey">getExtendedPublicKey</a></li><li data-type="method" id="Account-getMainAddress-nav"><a href="Account.html#getMainAddress">getMainAddress</a></li><li data-type="method" id="Account-getNextChainAddress-nav"><a href="Account.html#getNextChainAddress">getNextChainAddress</a></li><li data-type="method" id="Account-getNextChangeAddress-nav"><a href="Account.html#getNextChangeAddress">getNextChangeAddress</a></li><li data-type="method" id="Account-getUsedAddresses-nav"><a href="Account.html#getUsedAddresses">getUsedAddresses</a></li><li data-type="method" id="Account-sendPayment-nav"><a href="Account.html#sendPayment">sendPayment</a></li></ul></li><li id="Address-nav"><a href="Address.html">Address</a><ul class='methods'><li data-type="method" id="Address-addSpentTransaction-nav"><a href="Address.html#addSpentTransaction">addSpentTransaction</a></li><li data-type="method" id="Address-deserialize-nav"><a href="Address.html#deserialize">deserialize</a></li><li data-type="method" id="Address-getBalance-nav"><a href="Address.html#getBalance">getBalance</a></li><li data-type="method" id="Address-getECPair-nav"><a href="Address.html#getECPair">getECPair</a></li><li data-type="method" id="Address-getPrivateAddress-nav"><a href="Address.html#getPrivateAddress">getPrivateAddress</a></li><li data-type="method" id="Address-getPublicAddress-nav"><a href="Address.html#getPublicAddress">getPublicAddress</a></li><li data-type="method" id="Address-getTotalReceived-nav"><a href="Address.html#getTotalReceived">getTotalReceived</a></li><li data-type="method" id="Address-getTotalSent-nav"><a href="Address.html#getTotalSent">getTotalSent</a></li><li data-type="method" id="Address-getUnconfirmedBalance-nav"><a href="Address.html#getUnconfirmedBalance">getUnconfirmedBalance</a></li><li data-type="method" id="Address-getUnspent-nav"><a href="Address.html#getUnspent">getUnspent</a></li><li data-type="method" id="Address-removeSpent-nav"><a href="Address.html#removeSpent">removeSpent</a></li><li data-type="method" id="Address-serialize-nav"><a href="Address.html#serialize">serialize</a></li><li data-type="method" id="Address-signMessage-nav"><a href="Address.html#signMessage">signMessage</a></li><li data-type="method" id="Address-updateState-nav"><a href="Address.html#updateState">updateState</a></li><li data-type="method" id="Address-verifySignature-nav"><a href="Address.html#verifySignature">verifySignature</a></li></ul></li><li id="Coin-nav"><a href="Coin.html">Coin</a><ul class='methods'><li data-type="method" id="Coin-addAccount-nav"><a href="Coin.html#addAccount">addAccount</a></li><li data-type="method" id="Coin-discoverAccounts-nav"><a href="Coin.html#discoverAccounts">discoverAccounts</a></li><li data-type="method" id="Coin-getAccount-nav"><a href="Coin.html#getAccount">getAccount</a></li><li data-type="method" id="Coin-getAccounts-nav"><a href="Coin.html#getAccounts">getAccounts</a></li><li data-type="method" id="Coin-getAddress-nav"><a href="Coin.html#getAddress">getAddress</a></li><li data-type="method" id="Coin-getBalance-nav"><a href="Coin.html#getBalance">getBalance</a></li><li data-type="method" id="Coin-getCoinInfo-nav"><a href="Coin.html#getCoinInfo">getCoinInfo</a></li><li data-type="method" id="Coin-getExtendedPrivateKey-nav"><a href="Coin.html#getExtendedPrivateKey">getExtendedPrivateKey</a></li><li data-type="method" id="Coin-getExtendedPublicKey-nav"><a href="Coin.html#getExtendedPublicKey">getExtendedPublicKey</a></li><li data-type="method" id="Coin-getMainAddress-nav"><a href="Coin.html#getMainAddress">getMainAddress</a></li><li data-type="method" id="Coin-sendPayment-nav"><a href="Coin.html#sendPayment">sendPayment</a></li></ul></li><li id="FloPsbt-nav"><a href="FloPsbt.html">FloPsbt</a></li><li id="FloPsbtTransaction-nav"><a href="FloPsbtTransaction.html">FloPsbtTransaction</a></li><li id="TransactionBuilder-nav"><a href="TransactionBuilder.html">TransactionBuilder</a><ul class='methods'><li data-type="method" id="TransactionBuilder-addFrom-nav"><a href="TransactionBuilder.html#addFrom">addFrom</a></li><li data-type="method" id="TransactionBuilder-addTo-nav"><a href="TransactionBuilder.html#addTo">addTo</a></li><li data-type="method" id="TransactionBuilder-buildInputsAndOutputs-nav"><a href="TransactionBuilder.html#buildInputsAndOutputs">buildInputsAndOutputs</a></li><li data-type="method" id="TransactionBuilder-buildTX-nav"><a href="TransactionBuilder.html#buildTX">buildTX</a></li><li data-type="method" id="TransactionBuilder-discoverChange-nav"><a href="TransactionBuilder.html#discoverChange">discoverChange</a></li><li data-type="method" id="TransactionBuilder-getUnspents-nav"><a href="TransactionBuilder.html#getUnspents">getUnspents</a></li><li data-type="method" id="TransactionBuilder-parseOptions-nav"><a href="TransactionBuilder.html#parseOptions">parseOptions</a></li><li data-type="method" id="TransactionBuilder-sendTX-nav"><a href="TransactionBuilder.html#sendTX">sendTX</a></li></ul></li><li id="Wallet-nav"><a href="Wallet.html">Wallet</a><ul class='methods'><li data-type="method" id="Wallet-addCoin-nav"><a href="Wallet.html#addCoin">addCoin</a></li><li data-type="method" id="Wallet-addTestnetCoins-nav"><a href="Wallet.html#addTestnetCoins">addTestnetCoins</a></li><li data-type="method" id="Wallet-fromEntropy-nav"><a href="Wallet.html#fromEntropy">fromEntropy</a></li><li data-type="method" id="Wallet-fromMnemonic-nav"><a href="Wallet.html#fromMnemonic">fromMnemonic</a></li><li data-type="method" id="Wallet-fromSeed-nav"><a href="Wallet.html#fromSeed">fromSeed</a></li><li data-type="method" id="Wallet-getCoin-nav"><a href="Wallet.html#getCoin">getCoin</a></li><li data-type="method" id="Wallet-getCoinBalances-nav"><a href="Wallet.html#getCoinBalances">getCoinBalances</a></li><li data-type="method" id="Wallet-getCoins-nav"><a href="Wallet.html#getCoins">getCoins</a></li><li data-type="method" id="Wallet-getEntropy-nav"><a href="Wallet.html#getEntropy">getEntropy</a></li><li data-type="method" id="Wallet-getExchangeRates-nav"><a href="Wallet.html#getExchangeRates">getExchangeRates</a></li><li data-type="method" id="Wallet-getExplorerUrls-nav"><a href="Wallet.html#getExplorerUrls">getExplorerUrls</a></li><li data-type="method" id="Wallet-getFiatBalances-nav"><a href="Wallet.html#getFiatBalances">getFiatBalances</a></li><li data-type="method" id="Wallet-getMnemonic-nav"><a href="Wallet.html#getMnemonic">getMnemonic</a></li><li data-type="method" id="Wallet-getNetworks-nav"><a href="Wallet.html#getNetworks">getNetworks</a></li><li data-type="method" id="Wallet-getSeed-nav"><a href="Wallet.html#getSeed">getSeed</a></li><li data-type="method" id="Wallet-sendPayment-nav"><a href="Wallet.html#sendPayment">sendPayment</a></li><li data-type="method" id="Wallet-setExplorerUrls-nav"><a href="Wallet.html#setExplorerUrls">setExplorerUrls</a></li></ul></li></ul><h3>Modules</h3><ul><li id="util-nav"><a href="module-util.html">util</a><ul class='methods'><li data-type="method" id="util-isEntropy-nav"><a href="module-util.html#~isEntropy">isEntropy</a></li><li data-type="method" id="util-isMnemonic-nav"><a href="module-util.html#~isMnemonic">isMnemonic</a></li><li data-type="method" id="util-isValidPublicAddress-nav"><a href="module-util.html#~isValidPublicAddress">isValidPublicAddress</a></li><li data-type="method" id="util-isValidWIF-nav"><a href="module-util.html#~isValidWIF">isValidWIF</a></li><li data-type="method" id="util-toBase58-nav"><a href="module-util.html#~toBase58">toBase58</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#DEFAULT_OPTS">DEFAULT_OPTS</a></li><li><a href="global.html#transactionFromBuffer">transactionFromBuffer</a></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        FloPsbt
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      <h2>
+        
+        FloPsbt
+        
+      </h2>
+
+      
+        <div class="class-description">
+          <p>Psbt class can parse and generate a PSBT binary based off of the BIP174.
+There are 6 roles that this class fulfills. (Explained in BIP174)</p>
+<p>Creator: This can be done with <code>new Psbt()</code>
+Updater: This can be done with <code>psbt.addInput(input)</code>, <code>psbt.addInputs(inputs)</code>,
+<code>psbt.addOutput(output)</code>, <code>psbt.addOutputs(outputs)</code> when you are looking to
+add new inputs and outputs to the PSBT, and <code>psbt.updateGlobal(itemObject)</code>,
+<code>psbt.updateInput(itemObject)</code>, <code>psbt.updateOutput(itemObject)</code>
+addInput requires hash: Buffer | string; and index: number; as attributes
+and can also include any attributes that are used in updateInput method.
+addOutput requires script: Buffer; and value: number; and likewise can include
+data for updateOutput.
+For a list of what attributes should be what types. Check the bip174 library.
+Also, check the integration tests for some examples of usage.
+Signer: There are a few methods. signAllInputs and signAllInputsAsync, which will search all input
+information for your pubkey or pubkeyhash, and only sign inputs where it finds
+your info. Or you can explicitly sign a specific input with signInput and
+signInputAsync. For the async methods you can create a SignerAsync object
+and use something like a hardware wallet to sign with. (You must implement this)
+Combiner: psbts can be combined easily with <code>psbt.combine(psbt2, psbt3, psbt4 ...)</code>
+the psbt calling combine will always have precedence when a conflict occurs.
+Combine checks if the internal bitcoin transaction is the same, so be sure that
+all sequences, version, locktime, etc. are the same before combining.
+Input Finalizer: This role is fairly important. Not only does it need to construct
+the input scriptSigs and witnesses, but it SHOULD verify the signatures etc.
+Before running <code>psbt.finalizeAllInputs()</code> please run <code>psbt.validateSignaturesOfAllInputs()</code>
+Running any finalize method will delete any data in the input(s) that are no longer
+needed due to the finalized scripts containing the information.
+Transaction Extractor: This role will perform some checks before returning a
+Transaction object. Such as fee rate not being larger than maximumFeeRate etc.</p>
+        </div>
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+
+<br />
+<br />
+<hr />
+
+
+  
+    <h2>Constructor</h2>
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#FloPsbt">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="FloPsbt">
+      <span class="type-signature"></span>new FloPsbt<span class="signature">()</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="FloTransaction.js.html">FloTransaction.js</a>, <a href="FloTransaction.js.html#line490">line 490</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+  
+</body>
+</html>
